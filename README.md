@@ -1,4 +1,4 @@
-# meowji
+# nuxtInit
 
 > Nuxt.js project
 
