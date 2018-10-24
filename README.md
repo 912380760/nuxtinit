@@ -34,3 +34,8 @@ $ yarn run generate
 
 有关事物如何工作的详细解释，请查看 [Nuxt.js 文档](https://github.com/nuxt/nuxt.js).
 
+## License
+
+[MIT](http://opensource.org/licenses/MIT)
+
+Copyright (c) 2018 Lucien Huang
