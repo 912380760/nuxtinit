@@ -1,7 +1,7 @@
 var webpack = require('webpack')
-// const axios = require('axios')
 const baseURL = require('./plugins/baseurl')
-// axios.defaults.baseURL = baseURL.api;
+const axios = require('axios')
+axios.defaults.baseURL = baseURL.api;
 module.exports = {
   /*
    ** Headers of the page
@@ -61,12 +61,7 @@ module.exports = {
       isClient
     }) {
       if (isDev && isClient) {
-        config.module.rules.push({
-          enforce: 'pre',
-          test: /\.(js|vue)$/,
-          loader: 'eslint-loader',
-          exclude: /(node_modules)/
-        })
+        
       }
     },
 
@@ -88,6 +83,8 @@ module.exports = {
 
   // 配置插件，相当于main.js
   plugins: [
+    '@/plugins/filters.js',
+    '@/plugins/vue-lazyload.js',
     {
       src: '~/plugins/element-ui.js',
       ssr: false
