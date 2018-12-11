@@ -1,6 +1,6 @@
 # nuxtInit
 
-> Nuxt.js project
+> nuxt 初始化项目 为PC端项目配置
 
 ## Build Setup
 
@@ -8,7 +8,7 @@
 # install dependencies
 $ yarn # Or npm install
 
-# serve with hot reload at localhost:3000
+# serve with hot reload at localhost:3333
 $ yarn run dev
 
 # build for production and launch server
@@ -37,7 +37,7 @@ UI框架
 暴露了$和jQuery两个变量
 
 # @nuxtjs/axios
-*nuxt下的axios,组件中使用：this.$axios，asyncData中使用：app.$axios
+* nuxt下的axios,组件中使用：this.$axios，asyncData中使用：app.$axios
 * plugins/axios.js axios 扩展配置
 
 # @nuxtjs/sitemap 
